@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-bg: #080b16;
+  --light-bg: #141827;
+  --accent-color: #5a7dc2;
+  --text-color: #ffffff;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  color: var(--text-color);
+  background: var(--main-bg);
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.h-responsive {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Hide scrollbar */
+.no_scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no_scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
